@@ -1,0 +1,41 @@
+/* ✅ 푸터가 항상 하단에 위치하도록 설정 */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* ✅ 전체 뷰포트 높이를 채움 */
+  }
+  
+  .content {
+    flex: 1; /* ✅ 컨텐츠가 푸터를 밀어내도록 설정 */
+  }
+  
+  /* ✅ 푸터 스타일 */
+  .footer {
+    background-color: hsl(0, 0%, 100%); /* ✅ 세련된 다크 그레이 */
+    color: #aeaeae; /* ✅ 부드러운 회색 */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 12px; /* ✅ 글씨 크기 조정 */
+    line-height: 1.8; /* ✅ 가독성 개선 */
+    width: 100%;
+  }
+  
+  /* 푸터 내부 컨테이너 */
+  .footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* 텍스트 간격 */
+  .footer p {
+    margin: 5px 0;
+  }
