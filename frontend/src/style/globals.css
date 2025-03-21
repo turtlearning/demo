@@ -1,0 +1,181 @@
+/* 전체 헤더 스타일 */
+.header {
+    display: flex;
+    flex-direction: column; /* ✅ 위아래로 배치 */
+    align-items:left;
+    background-color: white;
+    padding: 5px 0;
+    width: 100%;
+  }
+
+    
+  /* 로고 스타일 */
+  .logo {
+    height: 30px;
+  }
+  
+  /* 상단 로고 영역 */
+  .header-top {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
+  }
+
+
+/* 하단 네비게이션 바 */
+.header-under {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 0px 30px;
+  }
+
+  
+  /* 네비게이션 메뉴 */
+  .nav-menu {
+    display: flex;
+    gap: 40px; /* 메뉴 간격 */
+  }
+  
+
+/* 기본 네비게이션 링크 스타일 */
+.nav-link {
+    text-decoration: none;
+    color: #444444;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 8px;
+    border-radius: 20px; /* ✅ 둥근 모서리 */
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* ✅ 네비게이션 활성화 상태 */
+.nav-link.active {
+    background-color: #456EB7; /* ✅ 활성화된 메뉴는 파란색 */
+    color: white;
+  }
+/* ✅ 호버 시 스타일 */
+.nav-link:hover {
+    background-color: #456EB7; /* ✅ 연한 파란색 배경 */
+    color: white;
+  }
+
+/* 배경 이미지 스타일 */
+.main-page {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* 배경 이미지 */
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* ✅ 텍스트 배경 블러 효과 */
+  .hero-text-container {
+    position: absolute;
+    left: 5%;
+    width: 40%;
+    backdrop-filter: blur(10px); /* ✅ 배경 블러 효과 */
+    background: rgba(129, 122, 122, 0.4); /* ✅ 살짝 어두운 반투명 배경 */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* ✅ 더 세련된 그림자 효과 */
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+  
+  /* 텍스트 스타일 */
+  .hero-text {
+    color: rgb(235, 235, 235);
+    text-align: left;
+  }
+  
+  .hero-text h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2); /* ✅ 네온 느낌의 텍스트 그림자 */
+  }
+  
+  .hero-text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* ✅ 부드러운 페이드인 애니메이션 */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* 고래 아이콘 섹션 */
+.icons {
+    display: flex;
+    justify-content: flex-start; /* 왼쪽에서 시작 */
+    overflow: hidden; /* 화면 밖 요소 숨김 */
+    white-space: nowrap; /* 한 줄 유지 */
+  }
+  
+  /* 개별 고래 아이콘 */
+  .icons img {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    animation: moveLeft 10s linear infinite; /* ✅ 왼쪽으로 이동 애니메이션 */
+  }
+  
+  /* 애니메이션 효과 */
+  @keyframes moveLeft {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  .marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollLoop 30s linear infinite;
+  }
+  
+  .whale-img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  @keyframes scrollLoop {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
