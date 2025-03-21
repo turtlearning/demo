@@ -1,6 +1,6 @@
 "use client"; // ✅ 클라이언트 컴포넌트 설정
-import "./subnav.css"; // ✅ 서브 네비게이션 관련 CSS
-import styles from "./intro.module.css";
+import "../subnav.css"; // ✅ 서브 네비게이션 관련 CSS
+import styles from "../intro.module.css";
 import { usePathname } from "next/navigation"; 
 
 export default function IntroGreet() {
@@ -13,7 +13,7 @@ export default function IntroGreet() {
         <a href="/intro/greet" className={`sub-nav-link ${pathname === "/intro/greet" ? "active" : ""}`}>
           인사말
         </a>
-        <a href="/intro/history" className={`sub-nav-link ${pathname === "/intro/history" ? "active" : ""}`}>
+        <a href="/intro/histori" className={`sub-nav-link ${pathname === "/intro/histori" ? "active" : ""}`}>
           연혁
         </a>
         <a href="/intro/character" className={`sub-nav-link ${pathname === "/intro/character" ? "active" : ""}`}>

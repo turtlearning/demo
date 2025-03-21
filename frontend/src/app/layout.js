@@ -1,10 +1,9 @@
 "use client"; // ✅ 클라이언트 컴포넌트 설정
 
-import React from "react";
 import Link from "next/link"; // ✅ Next.js의 Link 컴포넌트 추가
+import { usePathname } from "next/navigation";
 import Footer from "../component/Footer"; // ✅ components 폴더에 Footer가 있는지 확인
 import "../style/globals.css";
-import { usePathname } from "next/navigation"; 
 
 export default function Layout({ children }) {
   const pathname = usePathname();
@@ -25,10 +24,10 @@ export default function Layout({ children }) {
           <Link href="/intro" className={`nav-link ${(pathname.startsWith("/intro") || pathname.startsWith("/intro/greet")) ? "active" : ""}`}>
             회사소개
           </Link>
-          <Link href="/menu" className={`nav-link ${pathname.startsWith("/menu") ? "active" : ""}`}>
+          <Link href="/menu" className={`nav-link ${(pathname.startsWith("/menu") || pathname.startsWith("/menu/drink")) ? "active" : ""}`}>
             메뉴
           </Link>
-          <Link href="/stores" className={`nav-link ${pathname.startsWith("/stores") ? "active" : ""}`}>
+          <Link href="/store" className={`nav-link ${pathname.startsWith("/store") ? "active" : ""}`}>
             매장안내
           </Link>
           <Link href="/community" className={`nav-link ${pathname.startsWith("/community") ? "active" : ""}`}>
