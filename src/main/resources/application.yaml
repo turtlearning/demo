@@ -9,3 +9,18 @@ spring:
 logging:
   level:
     org.springframework.jdbc.core: DEBUG
+
+springdoc:
+  api-docs:
+    enabled: true
+    version: openapi_3_0
+    path: /v3/api-docs
+    groups:
+      enabled: false
+    resolve-schema-properties: true
+  default-consumes-media-type: application/json
+  auto-tag-classes: true
+  swagger-ui:
+    operations-sorter: method
+    path: /swagger-ui.html
+  show-actuator: false
