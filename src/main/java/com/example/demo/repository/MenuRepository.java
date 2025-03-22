@@ -22,7 +22,7 @@ public class MenuRepository {
         menuList.add(new Menu(counter.getAndIncrement(), "스페셜티 드립백커피 세트(10개입)", "BEVERAGE", 15000, "드립백10개(12gx10EA). 다크초콜릿의 풍미와, 묵직한 바디감, 산미를 잘 억제하여 깔끔하며 단맛이 매력적인 커피의 신사같은 블렌딩입니다.", "https://smartstore.naver.com/hygafe2022/products/8709202650", "https://shop-phinf.pstatic.net/20240129_274/1706490265444hfzN1_JPEG/107626049068057028_143486202.jpg?type=f296_296"));
         menuList.add(new Menu(counter.getAndIncrement(), "친환경 리트머그컵", "MD", 15000, "Unroll surface를 통해 제작한 컵으로 나무로부터 만들어진 CXP 소재를 이용해 만들어진 컵입니다.", "https://smartstore.naver.com/hygafe2022/products/9736715387", "https://shop-phinf.pstatic.net/20240129_173/1706490097261O1FTo_JPEG/107625880896865428_477216627.jpg?type=f296_296"));
         menuList.add(new Menu(counter.getAndIncrement(), "고래 바리스타 스티커", "MD", 2000, "노트북, 다이어리, 핸드폰 등 원하는 곳에 붙여보세요!", "https://smartstore.naver.com/hygafe2022/products/10922575288", "https://shop-phinf.pstatic.net/20240926_158/1727316555376atY6k_JPEG/61449368481972265_1553691962.jpg?type=f296_296"));
-        menuList.add(new Menu(counter.getAndIncrement(), "고래 바리스타 미니노트", "MD", 5500, "어디서나 편하게 들고 다닐 수 있는 미니노트입니다. 고래 바리스타가 후배 바리스타에게 하고 싶은 메시지를 담아 보았어요!", "https://smartstore.naver.com/hygafe2022/products/10922352059", ""));
+        menuList.add(new Menu(counter.getAndIncrement(), "고래 바리스타 미니노트", "MD", 5500, "어디서나 편하게 들고 다닐 수 있는 미니노트입니다. 고래 바리스타가 후배 바리스타에게 하고 싶은 메시지를 담아 보았어요!", "https://smartstore.naver.com/hygafe2022/products/10922352059", "https://shop-phinf.pstatic.net/20240926_255/1727313550926LdyYq_JPEG/3681141953817893_1970226136.jpg?type=f295_381"));
 
     }
 
