@@ -1,20 +1,23 @@
-.introContainer { 
+.introContainer {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 80vh;
+  align-items: flex-start; /* 👈 수직 정렬을 상단으로 변경 */
+   /* 👈 여백 추가로 자연스러운 위치 조정 */
+  min-height: 100vh; /* 필요시 높이 설정 */
 }
 
-.introContent { /* ✅ 클래스명 통일 */
+.introContent {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* 👈 내용도 상단 정렬 */
   justify-content: center;
-  width: 100%; 
+  width: 100%;
+  max-width: 1000px;
+  gap: 40px; /* 이미지와 텍스트 간격 */
 }
 
 .introImage {
   width: 80%;
   max-width: 400px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px #0000001a; 
+  box-shadow: 0 4px 8px #0000001a;
 }

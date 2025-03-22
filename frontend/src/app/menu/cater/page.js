@@ -1,7 +1,7 @@
 "use client";
-import { useEffect, useState } from "react";
-import Menunav from "../../../component/Menunav";
 import "../../../style/subnav.css";
+import Menunav from "../../../component/Menunav";
+import { useEffect, useState } from "react";
 
 export default function IntroHistori() {
   return (
@@ -17,7 +17,7 @@ function DrinkMenu() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:8080/menu/category/DESSERT")
+    fetch("http://localhost:8080/menu/category/CATER")
       .then((res) => {
         if (!res.ok) throw new Error("메뉴를 불러오는 데 실패했습니다.");
         return res.json();
@@ -34,7 +34,7 @@ function DrinkMenu() {
 
   return (
     <div style={{ maxWidth: "1000px", margin: "auto", padding: "20px" }}>
-      <h1 style={{ textAlign: "center", marginBottom: "30px" }}> 디저트 메뉴</h1>
+      <h1 style={{ textAlign: "center", marginBottom: "30px" }}>CATER 메뉴</h1>
       {loading ? (
         <p style={{ textAlign: "center" }}>로딩 중...</p>
       ) : drinks.length === 0 ? (
