@@ -33,9 +33,9 @@ export default function Layout({ children }) {
           <Link href="/community" className={`nav-link ${pathname.startsWith("/community") ? "active" : ""}`}>
             커뮤니티
           </Link>
-          <Link href="/game" className={`nav-link ${pathname.startsWith("/game") ? "active" : ""}`}>
-            바리스타 게임
-          </Link>
+          <a href="/barista-game/game.html" className={`nav-link ${pathname.startsWith("/barista-game") ? "active" : ""}`}>
+  바리스타 게임
+</a>
         </nav>
             </div>
           </header>
