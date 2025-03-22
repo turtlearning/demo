@@ -99,9 +99,10 @@ public class MenuController {
             @Parameter(description = "메뉴 카테고리", example = "커피") @RequestParam String category,
             @Parameter(description = "가격", example = "4500") @RequestParam double price,
             @Parameter(description = "설명", example = "깊고 진한 맛의 아메리카노") @RequestParam String description,
-            @Parameter(description = "구매 링크", example = "http://example.com") @RequestParam String purchaseLink
+            @Parameter(description = "구매 링크", example = "http://example.com") @RequestParam String purchaseLink,
+            @RequestParam String image
     ) {
-        menuService.addMenu(name, category, price, description, purchaseLink);
+        menuService.addMenu(name, category, price, description, purchaseLink, image);
         return "메뉴 추가 완료";
     }
 }

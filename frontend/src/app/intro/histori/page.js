@@ -1,10 +1,11 @@
-"use client"; // ✅ 클라이언트 컴포넌트 설정
-import "../subnav.css"; // ✅ 서브 네비게이션 관련 CSS
-import styles from "../intro.module.css";
-import { usePathname } from "next/navigation"; 
+"use client";
+import "../subnav.css";
 
-export default function IntroGreet() {
-  const pathname = usePathname(); // ✅ 현재 페이지 경로 가져오기
+import { usePathname } from "next/navigation";
+import styles from "../intro.module.css";
+
+export default function IntroHistori() {
+  const pathname = usePathname();
 
   return (
     <div>
@@ -21,9 +22,10 @@ export default function IntroGreet() {
         </a>
       </div>
 
-<div className={styles.introContainer}> {/* ✅ 클래스명 변경 */}
+      {/* ✅ 연혁 이미지 표시 */}
+      <div className={styles.introContainer}>
         <div className={styles.introContent}>
-          <img src="/intro1.png" alt="회사소개 이미지" className={styles.introImage} />
+          <img src="/intro2.png" alt="연혁 이미지" className={styles.introImage} />
         </div>
       </div>
     </div>

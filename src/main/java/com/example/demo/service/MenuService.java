@@ -23,8 +23,8 @@ public class MenuService {
         return menuRepository.findById(id);
     }
 
-    public void addMenu(String name, String category, double price, String description, String purchaseLink) {
-        Menu newMenu = new Menu(null, name, category, price, description, purchaseLink);
+    public void addMenu(String name, String category, double price, String description, String purchaseLink, String image) {
+        Menu newMenu = new Menu(null, name, category, price, description, purchaseLink, image);
         menuRepository.save(newMenu);
     }
 
