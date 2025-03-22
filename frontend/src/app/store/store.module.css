@@ -1,0 +1,84 @@
+/* src/app/store/store.module.css */
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    font-family: 'Pretendard', sans-serif;
+  }
+  
+  .sectionTitle {
+    text-align: center;
+    color: #456EB7;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  
+  .address {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .button {
+    padding: 10px 18px;
+    background-color: #456EB7;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #365799;
+  }
+  
+  .subSection {
+    margin-top: 40px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .subSection h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .subSection p {
+    font-size: 16px;
+    margin: 6px 0;
+    color: #444;
+    text-align: center;
+  }
+  
+  .holiday {
+    color: #d12e2e;
+    font-weight: 500;
+  }
+  .bulletList {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 중앙 정렬 핵심 */
+  }
+  
+  .bulletList li {
+    font-size: 16px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }

@@ -4,7 +4,7 @@
     justify-content: left; /* ✅ 왼쪽 정렬 */
     gap: 50px; /* ✅ 메뉴 간 간격 */
     background-color: white; /* ✅ 배경색 */
-    padding: 10px 40px; /* ✅ 안쪽 여백 */
+    padding: 10px 50px; /* ✅ 안쪽 여백 */
     border-bottom: 1px solid #ddd; /* ✅ 하단 구분선 */
 }
   

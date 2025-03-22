@@ -16,7 +16,7 @@ export default function Menunav() {
       <a href="/menu/mdgoods" className={`sub-nav-link ${pathname === "/menu/mdgoods" ? "active" : ""}`}>
         MD Goods
       </a>
-      <a href="/menu/cater" className={`sub-nav-link ${pathname === "/menu/mdgoods" ? "active" : ""}`}>
+      <a href="/menu/cater" className={`sub-nav-link ${pathname === "/menu/cater" ? "active" : ""}`}>
         Cater
       </a>
     </div>

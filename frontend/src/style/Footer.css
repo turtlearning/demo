@@ -35,7 +35,29 @@ html, body {
     padding: 0 20px;
   }
   
-  /* 텍스트 간격 */
-  .footer p {
-    margin: 5px 0;
-  }
+/* 텍스트 간격 */
+.footer p {
+  margin: 5px 0;
+}
+
+/* SNS 아이콘 컨테이너 */
+.footer-sns {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* 공통 SNS 아이콘 스타일 */
+.footer-sns img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+/* 호버 효과 */
+.footer-sns img:hover {
+  transform: scale(1.1);
+}
